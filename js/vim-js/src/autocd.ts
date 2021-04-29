@@ -95,10 +95,10 @@ const onBufferChange = executer(
   }, 30)
 )
 
+if (!existsSync(dirMap)) {
+  writeJsonSync({ roots: {} })
+}
 function onVimEnter({ projectsRootDicts, currentDir, gitRoot, projectRoot }) {
-  if (!existsSync(dirMap)) {
-    writeJsonSync({ roots: {} })
-  }
   if (projectRoot && gitRoot.startsWith(projectRoot as string)) {
     // looks like .../config/nvim/plugged/someproj
     return CD(gitRoot)

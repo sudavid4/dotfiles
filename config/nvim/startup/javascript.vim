@@ -28,6 +28,7 @@ function! s:setmapping()
     nmap <buffer><space>nn :call utils#run_shell_command('node  '.expand('%:p'), 0)<cr>
     nnoremap <buffer>{ :call GoToNextFunction(-1, 0, 1)<cr>
     nnoremap <buffer>} :call GoToNextFunction(-1, 0, 0)<cr>
+    nmap <buffer>K :call CocAction('doHover')<cr>
 endfunction
 
 "--------------------------------------------------------------------------------

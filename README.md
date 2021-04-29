@@ -57,5 +57,6 @@
     In short: set bin/nodedebugchrome.sh code through automator, open <br>
     systemPreferences -> keyboard -> shortcut -> general -> <br>
     add keyboard shortcut to what you've set up in the automator <br>
+30. set icon fonts in iterm: Iterm -> preferences -> profiles -> text -> [checkbox]"Use a different font for non-ASCII text": select DroidSansMono Nerd Font
 
 - to push to github (https with two factor authentication) you will need to use a token instead of your password. [Instructions here](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)

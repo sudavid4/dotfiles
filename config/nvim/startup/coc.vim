@@ -35,4 +35,13 @@ function! s:check_back_space() abort
   return result
 endfunction
 
+let g:coc_global_extensions = [
+      \'coc-git',
+      \'coc-explorer',
+      \'coc-eslint',
+      \'coc-tsserver',
+      \'coc-vimlsp',
+      \'coc-marketplace',
+      \'coc-snippets'
+      \]
 let g:coc_snippet_next = '<tab>'

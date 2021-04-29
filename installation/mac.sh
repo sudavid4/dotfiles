@@ -42,7 +42,7 @@ yarn global add typescript
 
 brew install fasd
 chsh -s /bin/zsh
-ln -fs ~/.dotfiles/config ~/.config
+ln -fs ~/.dotfiles/config/ ~/.config
 ln -sf ~/.dotfiles/zsh/zshrc.symlink ~/.zshrc
 brew install python3
 pip3 install neovim
@@ -51,4 +51,6 @@ curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-cd $HOME/.dotfile/js && yarn && yarn build
+cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+
+cd $HOME/.dotfiles/js && yarn && yarn build

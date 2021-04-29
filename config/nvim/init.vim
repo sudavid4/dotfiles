@@ -31,6 +31,7 @@ function! DeferGstatus(...)
 endfunction
 lua require('init')
 
+set runtimepath^=$DOTFILES/js/vim-js
 let g:nvcode_termcolors=256
 colorscheme darktooth
 " let base16colorspace=256  " Access colors present in 256 colorspace"
