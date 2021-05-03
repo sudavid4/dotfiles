@@ -1,3 +1,11 @@
+" function! SaveOrReload()
+"     if &mod
+"         write
+"     else
+"         edit
+"     endif
+" endfunction
+" nmap <space><space> :call SaveOrReload()<cr>
 nmap <space><space> :update<cr>:update<cr>
 vmap <space><space> :update<cr>:update<cr>
 function! NextClosedFold(dir)

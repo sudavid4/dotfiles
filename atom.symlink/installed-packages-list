@@ -1,6 +1,0 @@
-total 32
--rw-r--r--   1 davidsu  361602828    60B Sep  1  2015 README.md
-lrwxr-xr-x   1 davidsu  361602828    45B Jan  1 11:56 atom-open-in-vim@ -> /Users/davidsu/projects/atom/atom-open-in-vim
-lrwxr-xr-x   1 davidsu  361602828    40B Jan  1 19:49 atom-ternjs@ -> /Users/davidsu/projects/atom/atom-ternjs
-drwxr-xr-x  12 davidsu  361602828   408B Jan  2 15:12 hyperclick/
-lrwxr-xr-x   1 davidsu  361602828    49B Jan  2 16:33 last-cursor-position@ -> /Users/davidsu/projects/atom/last-cursor-position

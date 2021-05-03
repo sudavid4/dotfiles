@@ -1,6 +1,6 @@
 local hasPacker = require 'utils'.hasPacker
 if not hasPacker() then
-  os.execute('git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/opt/packer.nvim')
+  os.execute('git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim')
 end
 vim.api.nvim_command('packadd packer.nvim')
 
@@ -13,7 +13,7 @@ function cocTable(cocPlugin)
   }
 end
 return require('packer').startup(function()
-  use { 'wbthomason/packer.nvim', cmd={'PackerInstall', 'PackerClean'}} --packer: I'm requiring it, this prevents it from uninstalling itself on PackerClear
+  use 'wbthomason/packer.nvim'
   use 'neoclide/coc.nvim'
 --   use(cocTable('neoclide/coc.nvim'))
 --   use(cocTable('neoclide/coc-git'))
